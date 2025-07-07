@@ -10,7 +10,6 @@ export function allPlanetsMoonsCount(data) {
   const planets = data.planets 
 
     return planets 
-  // Get the total moon count 
   // Sum all the moon counts together
     .reduce((acc,ele)=> {
      return  (ele.moonsCount ? ele.moonsCount:0)  + acc
