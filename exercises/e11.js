@@ -7,12 +7,8 @@ import { data } from "../data/data";
 
 export function lowMoonsPlanets(data) {
   // Your code goes here...
-  // Access the planet data
-  const planets = data.planets
-  return planets 
-  // Find the planets with 0 to 10 moons 
-        .filter(planet => (planet.moons?.length || 0) <10)
-        // Return an array of the planet names 
+  return data.planets
+        .filter(planet => (planet.moons?.length || 0) <10) 
         .map(planet => planet.name)
 }
 

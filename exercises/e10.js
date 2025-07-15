@@ -6,10 +6,7 @@ import { data } from "../data/data";
 
 export function getAsteroidDataByName(data, asteroidName) {
   // Your code goes here...
-  // Access the asteroid data
-  const  asteroids = data.asteroids
-// Return the asteroid name the matches the parameter
-return asteroids 
+return data.asteroids
           .find(asteroid => asteroid.name === asteroidName)
 }
 

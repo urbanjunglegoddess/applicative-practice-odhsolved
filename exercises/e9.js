@@ -6,10 +6,7 @@ import { data } from "../data/data";
 
 export function getEarthData(data) {
   // Your code goes here...
-  // Access the planets array
-  const planets = data.planets
-// Find the name that matches the data inputed
-return planets
+return data.planets
           .find(planet => planet.id ==="earth")
 }
 
